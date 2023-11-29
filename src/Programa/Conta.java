@@ -6,6 +6,13 @@ public class Conta {
 
     private int numeroConta;
     private Pessoa pessoa;
-    private double saldo = 0.0;
+    private Double saldo = 0.0;
+
+    public Conta(int numeroConta, Pessoa pessoa, Double saldo) {
+        this.numeroConta = numeroConta;
+        this.pessoa = pessoa;
+        this.saldo = saldo;
+        contadorDeContas += 1;
+    }
 
 }
